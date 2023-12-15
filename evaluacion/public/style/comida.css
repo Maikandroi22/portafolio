@@ -21,7 +21,7 @@ h1 {
     text-align: justify;
 }
 
-section {
+div {
     display: flex;
     background-color: white;
 }
