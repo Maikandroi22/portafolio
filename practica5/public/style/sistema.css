@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+figure {
+    margin-left: 5px;
+    float: left;
+    text-align: justify;
+    margin-block-start: 5px;
+}
+
+.titulo {
+    text-align: justify;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    padding: 10px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+.informacion{
+    font-family: cursive;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 96%;
+    position: absolute;
+}

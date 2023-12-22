@@ -23,15 +23,10 @@ h1 {
 .titulo {
     text-align: justify;
 }
-
-button{
-    background-color: #333;
-    color: #fff;
-}
 a {
     text-decoration: none;
 }
 
-.informacion {
-    font-family:cursive;
+.informacion{
+    font-family: cursive;
 }

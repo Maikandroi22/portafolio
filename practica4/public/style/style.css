@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.no {
+    text-align: center;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+
+h1 {
+    text-align: justify;
+}
+
+
+div {
+    display: flex;
+    background-color: white;
+}
+.productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    width: 97.9%;
+    position:absolute;
+}
+
+
+.container-items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+article button {
+    background-color: #121312;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+}
+
+.button {
+    background-color: #fff;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}

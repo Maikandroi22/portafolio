@@ -1,3 +1,7 @@
+body {
+    text-align: center;
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -19,19 +23,28 @@ h1 {
 .button {
     background-color: #fff;
     color: black;
+    padding: 10px 20px;
 }
 .titulo {
     text-align: justify;
-}
-
-button{
-    background-color: #333;
-    color: #fff;
 }
 a {
     text-decoration: none;
 }
 
-.informacion {
-    font-family:cursive;
+.informacion{
+    font-family: cursive;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 96%;
+    position: absolute;
+}
+
+.imagen {
+    justify-content: center;
 }
