@@ -1,6 +1,7 @@
 
 body{
     margin: 0;
+    background: linear-gradient(0deg, rgba(195,34,34,1) 31%, rgba(208,253,45,1) 97%);
 }
 
 header {
@@ -17,30 +18,35 @@ figure {
 h1 {
     text-align: justify;
 }
-.zi {
+.h2 {
     text-align: justify;
 }
 
-
+.brillo {
+    box-shadow: 0px 0px 10px 5px white;
+  }
 
 section {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background: color white;
     border-radius: 8px;
     box-shadow: 0 0 10px
+    
 
 }
 
 header button{
     background-color: #fafdfa;
-    color: #fff;
+    color: black;
     padding: 10px;
     border: none;
     border-radius: 4px;
+    margin-right: 7px;
     cursor: pointer;
 }
+
 
 .texto1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -66,6 +72,5 @@ footer {
     padding: 1em;
     position: h1;
     bottom: 0;
-    width:  100%;
     
 }
