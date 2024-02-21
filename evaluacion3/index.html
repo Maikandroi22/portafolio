@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="/evaluacion3/style/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+        <img src="/evaluacion3/img/logo.jpg" alt="Logo de la marca">
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">CATALOGO</a></li>
+            <li><a href="#">NOSOTROS</a></li>
+        </ul>
+    </nav>
+    <a class="btn" href="#"><button>contact</button></a>
+    <a onclick="openNav()" class="menu" href="#"><button>MENU</button></a>
+    <div class="overlay" id="mobile-menu">
+      <a onclick="closeNav()" href="" class="close">&times;</a>
+      <div class="overlay-content">
+        <a href="#">INICIO</a>
+        <a href="#">CATALOGO</a>
+        <a href="#">NOSOTROS</a>
+        <a href="#">CONTACTO</a>
+      </div>
+    </div>
+</header>
+    <section class="contact">
+        <div class="u-wrapper">
+          <div class="contact-content">
+            <form id="form" action="https://formsubmit.co/maicolruiz2049@gmail.com" method="POST" class="form">
+              <h3 class="tag"><span>HABLEMOS</span></h3>
+              <label for="name">Nombre Completo <span>*</span></label>
+              <input name="name" required type="text" id="name" placeholder="Juan Sebastian Oquendo">
+              <label for="email">Correo electrónico <span>*</span></label>
+              <input name="email" type="email" id="email" required placeholder="ejemplo@gmail.com">
+              <label for="car">Algun carro que no encontraste? <span>*</span></label>
+              <input name="car" required type="text" id="car" placeholder="Chevrolet Camaro ZL1 2017">
+              <label for="message">Mensaje</label>
+              <input type="hidden" name="_next" value="http://127.0.0.1:5502/evaluacion3/index.html">
+              <input type="hidden" name="_captcha" value="false">
+
+              <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+              <button type="submit" class="btn primary full">enviar mensaje</button>
+            </form>
+            <a href="mailto:maicolruiz2049@gmail.com" id="trucazo">mail</a>
+          </div>
+        </div>
+      </section>
+      <script type="text/javascript" src="/evaluacion3/js/js.js"></script>
+</body>
+</html>
