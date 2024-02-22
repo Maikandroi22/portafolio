@@ -5,3 +5,4 @@ function openNav() {
 function closeNav() {
     document.getElementById("mobile-menu").style.width = "0";
 }
+

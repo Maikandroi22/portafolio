@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="/evaluacion3/public/style/busqueda.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+        <img src="/evaluacion3/public/img/logo.jpg" alt="Logo de la marca">
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">INICIO</a></li>
+            <li><a href="/evaluacion3/pages/busqueda.html">CATALOGO</a></li>
+            <li><a href="/evaluacion3/index.html">NOSOTROS</a></li>
+        </ul>
+    </nav>
+    <a class="btn" href="#"><button>contact</button></a>
+    <a onclick="openNav()" class="menu" href="#"><button>MENU</button></a>
+    <div class="overlay" id="mobile-menu">
+      <a onclick="closeNav()" href="" class="close">&times;</a>
+      <div class="overlay-content">
+        <a href="#">INICIO</a>
+        <a href="/evaluacion3/pages/busqueda.html">CATALOGO</a>
+        <a href="#">NOSOTROS</a>
+        <a href="/evaluacion3/index.html">CONTACTO</a>
+      </div>
+    </div>
+    <div class="buscar">
+      <input type="text"  name="buscador" id="buscador" placeholder="Buscar" required />
+
+      <div class="btns">
+        <svg class="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+        
+      </div>
+    </div>
+</header>
+
+<section class="container-items" id="listaArticulos">
+
+    
+        <div class="productos">
+            <article class="producto">
+                    <img src="/evaluacion/public/img/hamburgesa.jpeg" alt="hamburgesa">
+            <h2>Hamburgesa con queso </h2>
+            <p>Una deliciosa hamburguesa de queso con tomate carne a la plancha y cebollas</p>
+                <span>Precio: 5$</span>
+                <button class="brilla">pedir</button>
+            </article>
+       </div>
+        
+            <div class="productos">
+                <article class="producto">
+                    <img src="/evaluacion/public/img/hotdog.jpeg" alt="HotDog">
+                    <h2>HotDog</h2>
+                    <p>Un delicioso HotDog con cebolla caramelisada y chile</p>
+                    <span>Precio: 3$</span>
+                    <button class="brilla">pedir</button>
+                </article>
+            </div>
+    
+        <div class="productos">
+            <article class="producto">
+                <img src="/evaluacion/public/img/papas con chile.jpeg" alt="papas con chile">
+                <h2>Papas con Chile</h2>
+                <p>Unas deliciosas papas con chile</p>
+                <span>Precio: 4.50$</span>
+                <button class="brilla">pedir</button>
+            </article>
+        </div>
+    
+    <div class="productos">
+        <article class="producto">
+            <img src="/evaluacion/public/img/gaseosa.jpeg" alt="gaseosa">
+            <h2>Gaseosa</h2>
+            <p>Una refrescante gaseosa helada para acompañar tus comidas</p>
+            <span>Precio: 2$</span>
+            <button class="brilla">pedir</button>
+        </article>
+    </div>
+    
+    <div class="productos">
+        <article class="producto">
+            <img src="/evaluacion/public/img/limonada.jpeg" alt="">
+            <h2>Limonada</h2>
+            <p>Una refrescante limonada helada para acompañar tus comidas</p>
+            <span>Precio: 1$</span>
+            <button class="brilla">pedir</button>
+        </article>
+    </div>
+    
+    
+    <div class="productos">
+        <article class="producto">
+            <img src="/evaluacion/public/img/malteada.jpeg" alt="malteada">
+            <h2>Malteada de chocolate</h2>
+            <p>una deliciosa malteada de chocolate para tomar </p>
+            <span>Precio: 4$</span>
+            <button class="brilla">pedir</button>
+        </article>
+    </div>
+
+   
+
+</section>
+
+<script type="text/javascript" src="/evaluacion3/public/js/busqueda.js"></script>
+
+</body>
+</html>

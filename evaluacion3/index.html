@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario</title>
-    <link rel="stylesheet" href="/evaluacion3/style/style.css">
+    <link rel="stylesheet" href="/evaluacion3/public/style/style.css">
 </head>
 <body>
   <header class="header">
     <div class="logo">
-        <img src="/evaluacion3/img/logo.jpg" alt="Logo de la marca">
+        <img src="/evaluacion3/public/img/logo.jpg" alt="Logo de la marca">
     </div>
     <nav>
         <ul class="nav-links">
             <li><a href="#">INICIO</a></li>
-            <li><a href="#">CATALOGO</a></li>
+            <li><a href="/evaluacion3/pages/busqueda.html">CATALOGO</a></li>
             <li><a href="#">NOSOTROS</a></li>
         </ul>
     </nav>
@@ -24,9 +24,17 @@
       <a onclick="closeNav()" href="" class="close">&times;</a>
       <div class="overlay-content">
         <a href="#">INICIO</a>
-        <a href="#">CATALOGO</a>
+        <a href="/evaluacion3/pages/busqueda.html">CATALOGO</a>
         <a href="#">NOSOTROS</a>
         <a href="#">CONTACTO</a>
+      </div>
+    </div>
+    <div class="buscar">
+      <input type="text" placeholder="Buscar" required />
+
+      <div class="btns">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+        
       </div>
     </div>
 </header>
@@ -48,10 +56,20 @@
               <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
               <button type="submit" class="btn primary full">enviar mensaje</button>
             </form>
-            <a href="mailto:maicolruiz2049@gmail.com" id="trucazo">mail</a>
           </div>
         </div>
       </section>
-      <script type="text/javascript" src="/evaluacion3/js/js.js"></script>
+      <div class="productos">
+        <article class="producto">
+                <img src="" alt="hamburgesa">
+        <h2>arroz con queso </h2>
+        <p>Una deliciosa hamburguesa de queso con tomate carne a la plancha y cebollas</p>
+            <span>Precio: 5$</span>
+            <button class="brilla">pedir</button>
+        </article>
+   </div>
+    
+      <script type="text/javascript" src="/evaluacion3/public/js/js.js"></script>
+      <script src="/evaluacion3/public/js/busqueda.js"></script>
 </body>
 </html>

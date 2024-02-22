@@ -55,7 +55,8 @@ body {
   padding: 0 20px 0 0;
 }
 
-.header .nav-links li:hover, .overlay a:hover{
+.header .nav-links li:hover,
+.overlay a:hover {
   transform: scale(1.1);
   transition: all 0.3s ease 0s;
 }
@@ -68,7 +69,7 @@ body {
 .header .nav-links li a:hover {
   color: #ffbc0e;
   transform: scale(1.1);
-  
+
 }
 
 
@@ -76,12 +77,12 @@ body {
   order: 2;
 }
 
-.menu{
+.menu {
   display: none;
 }
 
 .header .btn button,
-.header .menu button {
+.header .menu button{
   margin-left: 20px;
   font-weight: 700;
   color: #1b3039;
@@ -100,14 +101,130 @@ body {
   transform: scale(1.1);
 }
 
+.buscar {
+  margin-left: 35px;
+  order: 2;
+  position: relative;
+  padding: 5px;
+}
+
+.buscar input {
+  width: 0;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: #222;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 30px;
+  transition: all 0.6s ease;
+}
+
+.btns {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: #e2f1f8;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon{
+  margin-top: 14px;
+  width: 26px;
+}
+
+.buscar:hover input {
+  width: 610px;
+}
+
+.buscar input:focus {
+  width: 610px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .nav-links,
+  .btn {
+    display: none;
+  }
+
+  .menu {
+    display: inherit;
+  }
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: 80%;
+  background-color: #1b3039;
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  color: #eceff1;
+}
+
+.header .overlay a:hover,
+.header .overlay a:focus {
+  color: #ffbc0e;
+}
+
+.header .overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+}
+
+@media screen and (max-height:450px) {
+  .header .overlay a {
+    font-size: 20px;
+  }
+
+  .header.overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
 h3 {
   font-size: 48px;
   line-height: 77px;
 }
 
-#trucazo {
-  opacity: 0;
-}
+
 
 .form {
   max-inline-size: 550px;
@@ -156,70 +273,3 @@ input::-webkit-input-placeholder {
 
 
 
-@media screen and (max-width: 800px) {
-  .nav-links, .btn{
-    display: none;
-  }
-
-  .menu{
-    display: inherit;
-  }
-}
-
-.header a{
-  text-decoration: none;
-}
-
-.header .overlay{
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  opacity: 80%;
- background-color: #1b3039;
- overflow: hidden;
- transition: all 0.3s ease 0s;
-}
-
-.header .overlay .overlay-content{
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.header .overlay a{
-  padding: 15px;
-  font-size: 36px;
-  display: block;
-  transition: all 0.3s ease 0s;
-  font-weight: 700;
-  color: #eceff1;
-}
-
-.header .overlay a:hover,
-.header .overlay a:focus{
-  color: #ffbc0e;
-}
-
-.header .overlay .close{
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 65px;
-}
-
-@media screen and (max-height:450px){
-  .header .overlay a{
-    font-size: 20px;
-  }
-
-  .header.overlay .close{
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
