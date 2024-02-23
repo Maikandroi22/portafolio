@@ -238,58 +238,15 @@
     display: none;
 }
 
-
-.container-items {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(100px, 1fr));
-  grid-gap: 20px;
-  padding: 20px;
+#car{
+  font-size: 30px;
+  margin-top: 20px;
+  list-style: none;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+}
+li{
+  margin: 5px 0;
 }
 
-figure {
-    margin-left: 20px;
-    float: left;
-}
-
-.h2 {
-    text-align: justify;
-}
-
-.div {
-    display: flex;
-    background: transparent;
-}
-
-span{
-    margin-right: 10px;
-}
-
-.productos {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-  
-.producto {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-}
-
-.producto img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-article button {
-    background-color: #121312;
-    color: #fff;
-    padding: 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-   
-}

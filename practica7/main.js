@@ -1,37 +1,10 @@
-function openNav() {
-    document.getElementById("mobile-menu").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("mobile-menu").style.width = "0";
-}
-
-document.addEventListener("keyup", e=>{
-
-   if(e.target.matches("#buscador")){
-
-    if(e.key ==="Escape")e.target.value = ""
-
-   document.querySelectorAll(".carro").forEach(carros =>{
-
-carros.textContent.toLowerCase().includes(e.target.value.toLowerCase()) 
-    ?carros.classList.remove("filtro")
-    :carros.classList.add("filtro")
-
-   })
-
-   }
-
-})
-
-
 const searchContainer = document.querySelector('.search-input-box');
-const inputSearch = searchContainer.querySelector('.buscador');
+const inputSearch = searchContainer.querySelector('input');
 const boxSuggestions = document.querySelector(
-	'.car'
+	'.container-suggestions'
 );
 
-const searchLink = document.querySelector('.a');
+const searchLink = document.querySelector('a');
 
 inputSearch.onkeyup = e => {
 	let userData = e.target.value;
